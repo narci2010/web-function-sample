@@ -42,4 +42,5 @@ This sample released under version 2.0 of the [Apache License][].
 
 [Apache License]: http://www.apache.org/licenses/LICENSE-2.0
 
-
+mvn exec:java -Dexec.mainClass="org.springframework.samples.web.reactive.function.Server" 
+mvn exec:java -Dexec.mainClass="org.springframework.samples.web.reactive.function.Client" 
