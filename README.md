@@ -45,3 +45,19 @@ This sample released under version 2.0 of the [Apache License][].
 mvn exec:java -Dexec.mainClass="org.springframework.samples.web.reactive.function.Server" 
 
 mvn exec:java -Dexec.mainClass="org.springframework.samples.web.reactive.function.Client" 
+
+mvn test -Pserver
+
+mvn test -Pclient
+
+修改maven的settings文件
+ <mirror>
+      <id>spring1</id>
+      <mirrorOf>*</mirrorOf> 
+      <url>http://repo.spring.io/plugins-release/</url>
+    </mirror>
+    <mirror>
+      <id>spring2</id>
+      <mirrorOf>*</mirrorOf> 
+      <url>http://repo.spring.io/libs-milestone/</url>
+    </mirror>
